@@ -1710,16 +1710,6 @@ int32 read_int(int f)
 
 	read_buf(f, b, 4);
 
-    //Patch {
-    FILE* fp = fopen("/Users/voytovichs/Desktop/sniffed.txt", "a");
-    char header[] = "<<<\n";
-    fwrite(header, 1, sizeof(header), fp);
-    fwrite(b, 1, 4, fp);
-    char end[] = "\n";
-    fwrite(end, 1, sizeof(end), fp);
-    fclose(fp);
-    //} Patch
-
     num = IVAL(b, 0);
 #if SIZEOF_INT32 > 4
 	if (num & (int32)0x80000000)
@@ -1862,13 +1852,22 @@ void read_buf(int f, char *buf, size_t len)
 		buf += siz;
 	}
     //Patch {
-    FILE* fp = fopen("/Users/voytovichs/Desktop/sniffed.txt", "a");
-    char header[] = "<<<\n";
-    fwrite(header, 1, sizeof(header), fp);
-    fwrite(buf, 1, len, fp);
-    char end[] = "\n";
-    fwrite(end, 1, sizeof(end), fp);
-    fclose(fp);
+	char* file_to_sniff = getenv("FILE_TO_SNIFF");
+	FILE* fp = fopen(file_to_sniff, "a");
+
+	char *role;
+	if (am_server) {
+		role = "I am server, ";
+	} else {
+		role = "I am client, ";
+	}
+	fwrite(role, 1, sizeof(role), fp);
+	char header[] = "reading\n";
+	fwrite(header, 1, sizeof(header), fp);
+	fwrite(buf, 1, len, fp);
+	char end[] = "done\n";
+	fwrite(end, 1, sizeof(end), fp);
+	fclose(fp);
     //} Patch
 }
 
@@ -2112,13 +2111,22 @@ void write_bigbuf(int f, const char *buf, size_t len)
 	size_t half_max = (iobuf.out.size - iobuf.out_empty_len) / 2;
 
     //Patch {
-    FILE* fp = fopen("/Users/voytovichs/Desktop/sniffed.txt", "a");
-    char header[] = ">>>\n";
-    fwrite(header, 1, sizeof(header), fp);
-    fwrite(buf, 1, len, fp);
-    char end[] = "\n";
-    fwrite(end, 1, sizeof(end), fp);
-    fclose(fp);
+	char* file_to_sniff = getenv("FILE_TO_SNIFF");
+	FILE* fp = fopen(file_to_sniff, "a");
+
+	char *role;
+	if (am_server) {
+		role = "I am server, ";
+	} else {
+		role = "I am client, ";
+	}
+	fwrite(role, 1, sizeof(role), fp);
+	char header[] = "writing\n";
+	fwrite(header, 1, sizeof(header), fp);
+	fwrite(buf, 1, len, fp);
+	char end[] = "done\n";
+	fwrite(end, 1, sizeof(end), fp);
+	fclose(fp);
     //} Patch
 
 	while (len > half_max + 1024) {
@@ -2154,11 +2162,20 @@ void write_buf(int f, const char *buf, size_t len)
 		memcpy(iobuf.out.buf + pos, buf, len);
 
     //Patch {
-    FILE* fp = fopen("/Users/voytovichs/Desktop/sniffed.txt", "a");
-    char header[] = ">>>\n";
+	char* file_to_sniff = getenv("FILE_TO_SNIFF");
+	FILE* fp = fopen(file_to_sniff, "a");
+
+	char *role;
+	if (am_server) {
+		role = "I am server, ";
+	} else {
+		role = "I am client, ";
+	}
+	fwrite(role, 1, sizeof(role), fp);
+	char header[] = "writing\n";
     fwrite(header, 1, sizeof(header), fp);
     fwrite(buf, 1, len, fp);
-    char end[] = "\n";
+    char end[] = "done\n";
     fwrite(end, 1, sizeof(end), fp);
     fclose(fp);
     //} Patch
