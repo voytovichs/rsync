@@ -2308,8 +2308,7 @@ int parse_arguments(int *argc_p, const char ***argv_p)
 		} else if ((p = check_for_hostspec(files_from, &h, &q)) != 0) {
 			if (am_server) {
 				snprintf(err_buf, sizeof err_buf,
-
-								"The --files-from sent to the server cannot specify a host.\n");
+					"The --files-from sent to the server cannot specify a host.\n");
 				return 0;
 			}
 			files_from = p;
