@@ -1,0 +1,3 @@
+/Users/voytovichs/Code/rsync/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/voytovichs/Code/rsync/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/voytovichs/Code/rsync/cmake-build-debug/CMakeFiles/rsync.dir

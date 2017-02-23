@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rsync"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/voytovichs/Code/rsync/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/voytovichs/Code/rsync/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/voytovichs/Code/rsync/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rsync">
+				<Option output="/Users/voytovichs/Code/rsync/cmake-build-debug/rsync" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/voytovichs/Code/rsync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 rsync"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rsync/fast">
+				<Option output="/Users/voytovichs/Code/rsync/cmake-build-debug/rsync" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/voytovichs/Code/rsync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 rsync/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/voytovichs/Code/rsync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/voytovichs/Code/rsync/access.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/acls.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/authenticate.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/backup.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/batch.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/byteorder.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/case_N.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/checksum.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/chmod.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/cleanup.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/clientname.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/clientserver.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/compat.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/connection.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/delete.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/doc/README-SGML">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/doc/profile.txt">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/doc/rsync.sgml">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/errcode.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/exclude.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/fileio.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/flist.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/generator.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/getfsdev.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/getgroups.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/hashtable.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/hlink.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/ifuncs.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/inums.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/io.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/io.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/itypes.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/addrinfo.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/compat.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/dummy.in">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/getaddrinfo.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/getpass.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/inet_ntop.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/inet_pton.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/md5.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/mdfour.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/mdigest.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/permstring.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/permstring.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/pool_alloc.3">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/pool_alloc.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/pool_alloc.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/snprintf.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/sysacls.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/sysacls.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/sysxattrs.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/sysxattrs.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/wildmatch.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/lib/wildmatch.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/loadparm.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/log.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/m4/have_type.m4">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/m4/socklen_t.m4">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/m4/validate_cache_system_type.m4">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/main.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/match.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/options.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/bin/gpg">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/branch-from-patch">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/cull_options">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/git-status.pl">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/lsb/rsync.spec">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/lsb/rsync.xinetd">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/nightly-rsync">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/patch-update">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/release-rsync">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/solaris/build_pkg.sh">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/systemd/rsync.service">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/packaging/var-checker">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/params.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/pipe.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/findme.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/findme.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/popt.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/popt.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/poptconfig.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/popthelp.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/poptint.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/poptparse.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/popt/system.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/progress.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/receiver.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/rounding.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/rsync.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/rsync.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/sender.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/socket.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/support/savetransfer.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/syscall.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/t_stub.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/t_unsafe.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/testhelp/maketree.py">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/testrun.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/tls.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/token.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/trimslash.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/uidlist.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/util.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/util2.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/wildtest.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/xattrs.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/ChangeLog">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/adler32.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/compress.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/crc32.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/crc32.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/deflate.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/deflate.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/gzguts.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inffast.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inffast.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inffixed.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inflate.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inflate.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inftrees.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/inftrees.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/trees.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/trees.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/zconf.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/zlib.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/zutil.c">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/zlib/zutil.h">
+			<Option target="rsync"/>
+		</Unit>
+		<Unit filename="/Users/voytovichs/Code/rsync/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
