@@ -72,6 +72,10 @@ static struct sum_struct *receive_sums(int f)
 
 	read_sum_head(f, s);
 
+	FILE* log2 = fopen("/Users/jetbrains/Desktop/log.txt","a");
+	fprintf(log2, "reading ckecksums: i_am=%s, flength=%lli, count=%d, blength=%d,remainder=%d\n", who_am_i(), s->flength, s->count, s->blength, s->remainder);
+	fclose(log2);
+
 	s->sums = NULL;
 
 	if (DEBUG_GTE(DELTASUM, 3)) {
@@ -216,6 +220,9 @@ void send_files(int f_in, int f_out)
 		ndx = read_ndx_and_attrs(f_in, f_out, &iflags, &fnamecmp_type,
 					 xname, &xlen);
 		extra_flist_sending_enabled = False;
+		FILE* log = fopen("/Users/jetbrains/Desktop/log.txt","a");
+		fprintf(log, "index=%d\n", ndx);
+		fclose(log);
 
 		if (ndx == NDX_DONE) {
 			if (!am_server && INFO_GTE(PROGRESS, 2) && cur_flist) {
@@ -328,6 +335,7 @@ void send_files(int f_in, int f_out)
 					    fnamecmp_type, xname, xlen);
 			continue;
 		}
+
 
 		if (!(s = receive_sums(f_in))) {
 			io_error |= IOERR_GENERAL;

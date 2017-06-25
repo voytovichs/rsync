@@ -1811,18 +1811,50 @@ int64 read_longint(int f)
 
 void read_buf(int f, char *buf, size_t len)
 {
+	size_t true_len = len;
 	if (f != iobuf.in_fd) {
 		if (safe_read(f, buf, len) != len)
 			whine_about_eof(False); /* Doesn't return. */
-		goto batch_copy;
+
+		const char *prefix = "/Users/jetbrains/Desktop/log-";
+		const char *ext = ".txt";
+		char file_name[strlen(prefix) + strlen(who_am_i()) + strlen(ext)];
+		strcpy(file_name, prefix);
+		strcat(file_name, who_am_i());
+		strcat(file_name, ext);
+		FILE *log = fopen(file_name, "a");
+		fprintf(log, "\n>|");
+		char data[len];
+		memcpy(data, buf, len);
+		fwrite(data, len, 1, log);
+		fprintf(log, "|\n");
+		fclose(log);
+
+		return;
 	}
 
 	if (!IN_MULTIPLEXED) {
 		raw_read_buf(buf, len);
+
+        const char *_prefix = "/Users/jetbrains/Desktop/log-";
+        const char *_ext = ".txt";
+        char _file_name[strlen(_prefix) + strlen(who_am_i()) + strlen(_ext)];
+        strcpy(_file_name, _prefix);
+        strcat(_file_name, who_am_i());
+        strcat(_file_name, _ext);
+        FILE *_log = fopen(_file_name, "a");
+		fprintf(_log, "\n>|");
+		char _data[len];
+        memcpy(_data, buf, len);
+        fwrite(_data, len, 1, _log);
+        fprintf(_log, "|\n");
+        fclose(_log);
+
 		total_data_read += len;
 		if (forward_flist_data)
 			write_buf(iobuf.out_fd, buf, len);
-	  batch_copy:
+
+        batch_copy:
 		if (f == write_batch_monitor_in)
 			safe_write(batch_fd, buf, len);
 		return;
@@ -1850,6 +1882,20 @@ void read_buf(int f, char *buf, size_t len)
 			break;
 		buf += siz;
 	}
+
+	const char *prefix = "/Users/jetbrains/Desktop/log-";
+	const char *ext = ".txt";
+	char file_name[strlen(prefix) + strlen(who_am_i()) + strlen(ext)];
+	strcpy(file_name, prefix);
+	strcat(file_name, who_am_i());
+	strcat(file_name, ext);
+	FILE *log = fopen(file_name, "a");
+	fprintf(log, "\n>|");
+	char data[true_len];
+	memcpy(data, buf, true_len);
+	fwrite(data, true_len, 1, log);
+	fprintf(log, "|\n");
+	fclose(log);
 }
 
 void read_sbuf(int f, char *buf, size_t len)
@@ -2103,6 +2149,21 @@ void write_bigbuf(int f, const char *buf, size_t len)
 void write_buf(int f, const char *buf, size_t len)
 {
 	size_t pos, siz;
+
+    const char *prefix = "/Users/jetbrains/Desktop/log-";
+    const char *ext = ".txt";
+    char file_name[strlen(prefix) + strlen(who_am_i()) + strlen(ext)];
+    strcpy(file_name, prefix);
+    strcat(file_name, who_am_i());
+    strcat(file_name, ext);
+    FILE *log = fopen(file_name, "a");
+    fprintf(log, "\n<|");
+    char data[len];
+    memcpy(data, buf, len);
+    fwrite(data, len, 1, log);
+    fprintf(log, "|\n");
+    fclose(log);
+
 
 	if (f != iobuf.out_fd) {
 		safe_write(f, buf, len);
